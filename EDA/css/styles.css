@@ -1,0 +1,43 @@
+html {
+	background: url(http://i.imgur.com/plr4DLd.gif)no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+body {
+	margin: 0 auto;
+}
+
+
+
+
+h1 {
+	text-align: center;
+	color: #FFF;
+}
+
+
+
+nav ul {
+	text-align: center;
+	color: red;
+	list-style: none;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a {
+      padding: 0.9rem 1rem 0.75rem;
+
+}
+
+nav ul li a:hover {
+   background-color: yellow;
+   color: #333;
+   transition: all .25s ease-in-out;
+}
+
