@@ -1,9 +1,13 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
 html {
 	background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/geometry2.png)repeat;
 }
 
 body {
 	margin: 0 auto;
+!important;
+	font-family: 'Lato', sans-serif;
 }
 
 
@@ -26,6 +30,7 @@ nav ul li {
 
 nav ul li a {
       padding: 0.9rem 1rem 0.75rem;
+      text-decoration: none;
 
 }
 
@@ -33,5 +38,18 @@ nav ul li a:hover {
    background-color: yellow;
    color: #333;
    transition: all .25s ease-in-out;
+}
+
+.blog {
+	margin-left: 20px;
+	margin-top: 40px;
+}
+
+.blog em {
+	font-weight: bold;
+}
+
+.blog p {
+	margin-bottom: 20px;
 }
 
