@@ -1,24 +1,36 @@
-
+.container {
+	background-color: ;
+}
 body {
   	background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/geometry2.png)repeat; 
 }
 
-#logo img {
-	padding-top: 20px;
-	padding-left: 20px;
-	width: 300px;
+h1 {
+	padding: 10px 10px;
+	background-color: yellow;
 }
 
+h1 a {
+	text-decoration: none;
+	color: inherit;
+}
+
+nav ul  {
+	background-color: black;
+	padding-left: 50px;
+}
 nav ul li {
 	display: inline-block;
+	line-height: 70%;
 }
 
 nav ul li a {
-    padding: 0.9rem 2.5rem 0.75rem;
+    padding: 0.3rem 1rem 0.75rem;
 	text-decoration: none;
 }
  
 nav ul li a:hover {
+	margin-top: 100px;
     background-color: yellow;
     color: #333;
     transition: all .25s ease-in-out;
