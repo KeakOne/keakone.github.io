@@ -27,6 +27,10 @@ h1 a {
 	color: inherit;
 }
 
+#intro-text {
+    padding-top: 20px;
+}
+
 nav ul  {
 	background-color: black;
 	padding-left: 50px;
