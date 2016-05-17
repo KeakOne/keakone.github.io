@@ -1,0 +1,17 @@
+
+.leftbox {
+		position: fixed;
+    border:solid 3px #000000;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.right {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    max-height: 100%;
+    width: 190px;
+    overflow-y: auto;
+}
