@@ -6,9 +6,11 @@ body {
   background-size: cover;
 }
 
-
+#github {
+    width: 50px;
+}
 .leftbox {
-    margin-top: 20px;
+  margin-top: 20px;
   opacity: 0.7;
 
 }
