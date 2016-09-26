@@ -7,14 +7,25 @@
 }
 
 #intro, #work, #about {
-  padding-top: 3rem;
+  padding-top: 1rem;
 
 }
 
 .about-text {
   font-size: 1.2em;
 
+}
 
+#arrow {
+  position: absolute;
+  top:60%;
+  left: 27%;
+  width: 0;
+  height: 0;
+  border-top:50px solid white;
+  border-right: 50px solid transparent;
+  border-bottom:50px solid transparent;
+  border-left: 50px solid transparent;
 }
 
 textarea {
@@ -22,6 +33,14 @@ textarea {
   outline: none;
   resize: none;
   border-color: white;
+
+
+    border:solid 9px #000000;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+
+
   width:75%;
   float: right;
   height: 200px;
@@ -31,7 +50,7 @@ textarea {
   font-size: 30px;
   letter-spacing: 1px;
   text-align: center;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Montserrat', monospace;
   -webkit-font-smoothing : auto;
   line-height: 1.8;
 }
@@ -192,6 +211,11 @@ textarea {
   .face .hair {
     left: 50%;
   }
+  #arrow {
+    display:none;
+  }
+
+
 }
 
 
@@ -211,7 +235,7 @@ overflow: scroll;
     min-height: 300px;
     max-height: 864px;
     position: relative;
-    background-color: #2980b9;
+    background-color: #000000;
 }
 
 #nav_f{
@@ -242,7 +266,9 @@ overflow: scroll;
 
 .span_h2 {font-weight: 300;color: #2980b9;}
 
-.text_b{color: #2980b9;}
+.text_b{color: #000000;}
+
+#contact .text_b {color:#FFFFFF;}
 
 .in{font-weight: 400 !important; font-style: normal !important;}
 
