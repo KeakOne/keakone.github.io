@@ -470,14 +470,10 @@ nav a.button-collapse {
 
 }
 
-.card-image {
-    width: 280px; 
-    height: 240px; 
-  overflow: hidden;
-}
 
 .card-image img {
-  width: 100%;
+  width: 280px;
+  overflow: hidden;
 }
 
 
@@ -504,3 +500,4 @@ nav a.button-collapse {
 footer.page-footer {
     margin-top: 0px !important;
 }
+
