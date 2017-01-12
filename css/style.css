@@ -305,6 +305,25 @@ nav ul a {
     padding: 0px 15px;
 }
 
+.underline {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+.underline:after {
+  content: '';
+  position: absolute;
+  margin-top: 2px;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-top: 2px solid white;
+  transition: 0.4s;
+}
+.underline:hover:after {
+  width: 100%;
+}
+
 .cd-headline.type .cd-words-wrapper {
     vertical-align: top;
     overflow: hidden;
