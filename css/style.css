@@ -520,3 +520,45 @@ footer.page-footer {
     margin-top: 0px !important;
 }
 
+.contact-icons {
+  text-align: center;
+}
+
+.contact-icons li {
+  display: inline-block;
+  line-height: 20px;
+}
+
+/*testing footer code
+*/
+
+.content {
+  padding: 30px;
+  text-align: center;
+  color: #999;
+}
+
+.footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.social {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 0 12px;
+  line-height: 112px;
+  font-size: 35px;
+  text-align: center;
+  color: #bbb;
+  border-radius: 50%;
+  background: #eee;
+  overflow: hidden;
+  transition: color .3s;
+}
+
+.social:hover {
+  color: #59d;
+  cursor: pointer;
+}
