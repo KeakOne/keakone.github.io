@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Keanu</title>
+	<meta name="description" content="pagePiling.js plugin by Alvaro Trigo." />
+	<meta name="keywords"  content="pile,piling,piling.js,stack,pages,scrolling,stacking,touch,fullpile,scroll,plugin,jquery" />
+	<meta name="Resource-type" content="Document" />
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../jquery.pagepiling.css" />
+	<link rel="stylesheet" type="text/css" href="../unslider.css" />
+		<link rel="stylesheet" type="text/css" href="../animate.css" />
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="../unslider-min.js"></script>
+	<script type="text/javascript" src="../jquery.pagepiling.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+
+				$('.my-slider').unslider();
+
+			/*
+			* Plugin intialization 
+			*/
+	    	$('#pagepiling').pagepiling({
+	    		menu: '#menu',
+	    		anchors: ['page1', 'page2', 'page3', 'page4'],
+			    sectionsColor: ['white', 'white', 'white', 'white'],
+			    loopTop: true,
+			    loopBottom: true,
+			    navigation: {
+			    	'position': 'right',
+			   		'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4']
+			   	},
+			    afterRender: function(){
+			    	console.log('after render');
+			   //  	jQuery(document).ready(function(){
+						//    $('h1').mousemove(function(e){
+						//      var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
+						//      var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
+						//      $('h1').css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
+						//    });
+						// });
+			    },
+					afterLoad: function(anchorLink, index) {
+
+	          // $.fn.pagepiling.setAllowScrolling(false);
+	          console.log("After Load " + index);
+	          if (index == 1) {
+					    $('#intro').addClass('bounce');
+	          } else if (index == 2) {
+	          	console.log("index " + index);
+	          }
+
+
+
+
+
+
+
+					          if (index > 1) {
+					            $('#pp-nav').removeClass('custom');
+					          } else {
+					            $('#pp-nav').addClass('custom');
+					          }
+					        },
+	    });
+	  })
+    </script>
+
+
+</head>
+<body>
+	<ul id="menu">
+		<li id="home" data-menuanchor="page1" class="active"><a href="#page1">home</a></li>
+		<li id="projects" data-menuanchor="page2"><a href="#page2">projects</a></li>
+		<li id="contact" data-menuanchor="page3"><a href="#page3">contact</a></li>
+		<li id="about" data-menuanchor="page4"><a href="#page4">about</a></li>
+
+	</ul>
+
+
+		<div id="pagepiling">
+	    <div class="section" id="section1">
+	    	<h1></h1>
+	    	
+				<p id="intro" class="animated">Hello World! I'm a digital designer in Wellington, New Zealand.</p>
+	    </div>
+
+	    <div class="section" id="section2">
+		    <div class="my-slider">
+		    	<h2>latest projects</h2>
+
+				<ul>
+					<li><a href="http://www.spacesuit.co.nz/" target="_blank"><img width="40%" src="./imgs/project3.png"><p>Simple website created created for local vintage boutique Spacesuit Clothing</p></a></li>
+					<li><img width="40%" src="./imgs/project4.png"><p></p></li>
+					<li><img width="40%" src="./imgs/project5.png"><p></p></li>
+
+				</ul>
+
+
+			</div>
+
+	    </div>
+	    <div class="section" id="section3">
+	    	<div class="intro">
+	    		<h2>Get in touch!</h2>
+	    		<p>I'm always looking for the next project to contribute to and be a part of, so get in touch and lets get to work!</p>
+					<div class="social">
+                <a href="mailto:keanucarnevale@gmail.com">
+               <i class=" fa fa-envelope-o" aria-hidden="true"></i>
+               </a>
+              </div>
+
+              <div class="social">
+                <a href="https://github.com/keakone">
+                <i class=" fa fa-github-square" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="social">
+                <a href="https://www.linkedin.com/in/keanucarnevale">
+                  <i class=" fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+              </div>
+	    		</div>
+	    </div>
+
+
+	    <div class="section" id="section4">
+	    	<div class="about">
+	    		<h2>about me</h2>
+	    		<p>I am a young front-end developer with qualifications in graphic design and web development.I'm at the stage of finishing my studies,</p>
+	    	</div>
+	    </div>
+	</div>
+
+</body>
+</html>

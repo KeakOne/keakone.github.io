@@ -1,0 +1,290 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+ol {
+	display: none;
+}
+caption,th {
+    text-align: left;
+
+}
+
+h1 {
+  font-size: 20vw;
+  
+}
+
+h2 {
+	font-size: 5vw;
+}
+
+p{
+		opacity: 0.6;
+ 		margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+@media only screen and (max-device-width:400px){
+  p {
+	font-size: 3.5vw;
+  };
+}
+
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section{
+	text-align: center;
+
+}
+
+/* Slider controls */
+/*.unslider-arrow {
+	display: none;
+}*/
+
+
+
+
+/* Menu
+ * --------------------------------------- */
+#menu li {
+	font-weight: 200;
+	display:inline-block;
+	margin: 0px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+#menu li.active{
+
+    background-color: #E5FFB5;
+    background: #E5FFB5;
+    color: #E5FFB5;
+
+}
+#menu li a{
+	text-decoration:underline;
+	color: #000;
+}
+#menu li.active a:hover{
+
+}
+/*#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}*/
+#menu li a,
+#menu li.active a{
+	padding: 4px 4px;
+	display:block;
+}
+#menu li.active a{
+	color: black;
+	text-decoration: none;
+}
+
+
+#menu #home {
+	position: fixed;
+	left: 47%;
+	z-index: 70;
+}
+
+#menu #projects {
+	position: fixed;
+	left: 0;
+	top: 40%;
+	z-index: 70;
+	transform: rotate(90deg);
+}
+
+#menu #contact {
+	position: fixed;
+	right: 0%;
+	top: 40%;
+	z-index: 70;
+	z-index: 70;
+	transform: rotate(270deg);
+}
+
+#menu #about {
+	position: fixed;
+	left: 47%;
+	z-index: 70;
+	bottom: 0;
+}
+
+.intro p{
+	margin: 0 auto;
+}
+
+@media only screen and (max-device-width:800px){
+  #menu #home, #menu #about {
+	left: 40%;
+  };
+
+#menu li {
+	margin: 0px;
+}
+
+
+}
+
+
+/* Section 1 -- Homepage
+ * --------------------------------------- */
+
+#section1 {
+	background-size: contain;
+/*  background: url(imgs/WaterBG.jpg) no-repeat center center fixed; 
+*/  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#section1 h1{
+	color: #444;
+}
+#section1 p{
+/*	color: #333;
+	color: rgba(0,0,0,0.3);*/
+}
+#section1 img{
+	margin: 20px 0;
+	opacity: 0.7;
+}
+
+/* Section 2 -- latest projects
+ * --------------------------------------- */
+@media only screen and (max-device-width:800px){
+#section2 p{
+	font-size: 15px;
+}
+}
+
+@media only screen and (max-device-width:600px){
+#section2 img{
+	width: 60%;
+}
+}
+
+#section2 {
+	background-color: white;
+}
+#section2 h1,
+#section2 p{
+	z-index: 3;
+}
+
+
+
+
+/* Section 3 -- contact
+ * --------------------------------------- */
+.social {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 20PX 12px;
+  line-height: 100px;
+  font-size: 4em;
+  text-align: center;
+  border-radius: 50%;
+  background: #eee;
+ 	text-decoration: none;
+}
+
+.social .fa {
+	color: black;
+
+}
+
+#section3 {
+/*  background: url(./imgs/hand.png) no-repeat center center fixed; 
+*/  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#section3 p{
+	color: #757575;
+}
+
+
+
+@media only screen and (max-device-width:500px){
+  .social {
+  margin: 0PX 0px;
+  }
+
+
+
+  
+}
+
+/* Section 4 -- About me
+ * --------------------------------------- */
+#section4 p{
+
+}
+
+/* Overwriting fullPage.js tooltip color + PP nav is the dot nav
+* --------------------------------------- */
+#pp-nav {
+	display: none;
+}
+#pp-nav.custom .pp-tooltip{
+	color: #AAA;
+}
+
+/*Controls the speed of apge transition*/
+    	.pp-easing {
+		    -webkit-transition: all 800ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
+		    -moz-transition: all 800ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
+		    -o-transition: all 800ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
+		    transition: all 800ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
+		    /* custom */
+		    -webkit-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
+		    -moz-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
+		    -o-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
+		    transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
+		    /* custom */
+		}
