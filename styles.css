@@ -96,8 +96,8 @@ body{
 }
 #menu li.active{
 
-    background-color: #E5FFB5;
-    background: #E5FFB5;
+    background-color: orange;
+    background: orange;
     color: #E5FFB5;
 
 }
@@ -173,6 +173,24 @@ body{
 /* Section 1 -- Homepage
  * --------------------------------------- */
 
+ .fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 #section1 {
 	background-size: contain;
 /*  background: url(imgs/WaterBG.jpg) no-repeat center center fixed; 
@@ -180,14 +198,19 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
 }
 #section1 h1{
-	color: #444;
+	color: white;
+	font-size: 8vw;
 }
+
 #section1 p{
-/*	color: #333;
-	color: rgba(0,0,0,0.3);*/
+  background: orange;
+  font-size: 15px;
 }
+
+
 #section1 img{
 	margin: 20px 0;
 	opacity: 0.7;
