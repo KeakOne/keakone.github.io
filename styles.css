@@ -96,8 +96,8 @@ body{
 }
 #menu li.active{
 
-    background-color: orange;
-    background: orange;
+    background-color: #BBDEFB;
+    background: #BBDEFB;
     color: #E5FFB5;
 
 }
@@ -206,7 +206,7 @@ body{
 }
 
 #section1 p{
-  background: orange;
+  background: #BBDEFB;
   font-size: 15px;
 }
 
