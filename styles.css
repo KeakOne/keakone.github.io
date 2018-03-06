@@ -105,12 +105,8 @@ body{
 	text-decoration:underline;
 	color: #000;
 }
-#menu li.active a:hover{
 
-}
-/*#menu li:hover{
-	background: rgba(255,255,255, 0.8);
-}*/
+
 #menu li a,
 #menu li.active a{
 	padding: 4px 4px;
@@ -173,22 +169,31 @@ body{
 /* Section 1 -- Homepage
  * --------------------------------------- */
 
- .fullscreen-bg {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
+#myVideo{
+	position: absolute;
+/*	z-index: 4;
+*/	right: 0;
+	bottom: 0;
+	top:0;
+	right:0;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+		background-color: black; /* in case the video doesn't fit the whole page*/
+		background-image: /* our video */;
+		background-position: center center;
+		background-size: contain;
+ 		object-fit: cover; /*cover video background */
 }
 
-.fullscreen-bg__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-}
+		#section1 .layer{
+			position: absolute;
+			z-index: 3;
+			width: 100%;
+			left: 0;
+			top: 43%;
+			height: 100%;
+		}
 
 #section1 {
 	background-size: contain;
@@ -203,8 +208,32 @@ body{
 	font-size: 8vw;
 }
 
-#section1 p{
+h1 {
+  animation-duration: 200s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+
+/*  -moz-animation-duration: 3s;
+  -moz-animation-delay: 1s;
+  -moz-animation-iteration-count: once;
+
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: once;
+
+  -o-animation-duration: 3s;
+  -o-animation-delay: 1s;
+  -o-animation-iteration-count: once;*/
+}
+
+#intro {
   background: #BBDEFB;
+  padding: 15px;
+
+}
+
+
+#section1 p{
   font-size: 15px;
 }
 
@@ -241,6 +270,7 @@ body{
 
 /* Section 3 -- contact
  * --------------------------------------- */
+
 .social {
   display: inline-block;
   width: 100px;
@@ -259,13 +289,7 @@ body{
 
 }
 
-#section3 {
-/*  background: url(./imgs/hand.png) no-repeat center center fixed; 
-*/  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 #section3 p{
 	color: #757575;
 }
@@ -284,8 +308,18 @@ body{
 
 /* Section 4 -- About me
  * --------------------------------------- */
-#section4 p{
+#section4 {
 
+	  background: url(imgs/keanu.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+} 
+
+#section4 p , h2 {
+	color: white;
 }
 
 /* Overwriting fullPage.js tooltip color + PP nav is the dot nav

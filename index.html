@@ -32,7 +32,7 @@
 	    	$('#pagepiling').pagepiling({
 	    		menu: '#menu',
 	    		anchors: ['page1', 'page2', 'page3', 'page4'],
-			    sectionsColor: ['white', 'white', 'white', 'white'],
+			    sectionsColor: ['white', 'white', '#BBDEFB', 'white'],
 			    loopTop: true,
 			    loopBottom: true,
 			    navigation: {
@@ -41,13 +41,6 @@
 			   	},
 			    afterRender: function(){
 			    	console.log('after render');
-			   //  	jQuery(document).ready(function(){
-						//    $('h1').mousemove(function(e){
-						//      var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
-						//      var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
-						//      $('h1').css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
-						//    });
-						// });
 			    },
 					afterLoad: function(anchorLink, index) {
 
@@ -89,15 +82,17 @@
 
 		<div id="pagepiling">
 
-	    <div class="section" id="section1">
-		    <div class="fullscreen-bg">	  
-				    <video loop muted autoplay poster="imgs/Busy-City.jpg" class="fullscreen-bg__video">
-				        <source src="imgs/Busy-City.webm" type="video/webm">
-				        <source src="imgs/Busy-City.mp4" type="video/mp4">
-						</video> 
-				</div> 	
-				<h1>Keanu Carnevale</h1>
-				<p id="intro" class="animated">I am a front-end designer & developer, photographer and all around internet lover. <br>I'm passionate about creating beautiful visions and interactions.</p>
+	    <div class="section">
+	    <video autoplay loop muted id="myVideo">
+				<source src="imgs/Busy-City.mp4" type="video/mp4">
+				<source src="imgs/Busy-City.webm" type="video/webm">
+			</video>
+
+
+			<div class="layer" id="section1">
+				<h1 class="animated fadeIn">Keanu Carnevale</h1>
+				<p id="intro">I am a front-end designer & developer, photographer and all around internet lover. <br>I'm passionate about creating beautiful visions and interactions.</p>
+			</div>
 	    </div>
 
 	    <div class="section" id="section2">
